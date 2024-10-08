@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.tahopen</groupId>
+    <artifactId>tdi-osgi-bridge-parent</artifactId>
+    <version>0.1.0.0-SNAPSHOT</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+  <artifactId>tahopen-osgi-spoon-examples</artifactId>
+  <version>0.1.0.0-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>Tahopen Community Edition Project: ${project.artifactId}</name>
+  <description>a Tahopen open source project</description>
+  <url>http://www.tahopen.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>tahopen-kettle</groupId>
+      <artifactId>kettle-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>tahopen-kettle</groupId>
+      <artifactId>kettle-engine</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>tahopen-kettle</groupId>
+      <artifactId>kettle-ui-swt</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen</groupId>
+      <artifactId>commons-xul-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Bundle-Version>${project.version}</Bundle-Version>
+            <Export-Package>org.pentaho.di.plugins.examples.helloworld,org.pentaho.di.plugins.examples.helloworld.res,
+                            org.pentaho.di.plugins.examples.texteditor, org.pentaho.di.plugins.examples.texteditor.res</Export-Package>
+            <Private-Package></Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
