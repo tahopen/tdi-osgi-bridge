@@ -1,6 +1,6 @@
-# pdi-osgi-bridge
+# tdi-osgi-bridge
 
-This project builds a PDI plugin which supplies extensions to the PluginRegistry allowing OSGI bundles to supply Kettle plugin types. 
+This project builds a TDI plugin which supplies extensions to the PluginRegistry allowing OSGI bundles to supply Kettle plugin types. 
 
 
 ### Development
