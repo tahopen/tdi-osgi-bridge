@@ -4,7 +4,7 @@ This project builds a PDI plugin which supplies extensions to the PluginRegistry
 
 
 ### Development
-Development of this project is active under the "future-develop" branch. This branch will contain the source of the latest released version once available.
+Development of this project is active under the "main" branch. This branch will contain the source of the latest released version once available.
 
 #### Pre-requisites for building the project:
 * Maven, version 3+
